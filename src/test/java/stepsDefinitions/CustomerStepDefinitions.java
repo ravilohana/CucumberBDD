@@ -17,7 +17,7 @@ public class CustomerStepDefinitions {
 
     private final TestContext context;
     private final StorePage storePage;
-    private BillingDetails billingDetails;
+
 
 
    public CustomerStepDefinitions(TestContext context){
@@ -58,7 +58,7 @@ public class CustomerStepDefinitions {
 
 
     @And("my billing details are")
-    public void myBillingDetailsAre() {
+    public void myBillingDetailsAre(BillingDetails billingDetails) {
         context.billingDetails = billingDetails;
     }
 }
